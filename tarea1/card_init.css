@@ -1,0 +1,46 @@
+body {
+ font-family: Arial, sans-serif;
+ /*Implementamos un color para el fondo*/
+ background-color: rgb(230, 150, 150);
+}
+.tarjeta {
+ /*Asignamos un ancho, márgenes que mantengan centrada la tarjeta 
+ un padding que aleje los bordes, el tipo de borde, la sombra y lo alineamos en el centro*/
+ width: 500px;
+ margin: auto;
+ margin-top: 10%;
+ margin-bottom: 10%;
+ padding: 15px;
+ border: 2px solid black;
+ box-shadow: 3px 3px 10px;
+ text-align: center;
+ /*Al boton le asignamos también un padding, redondeamos su borde con un border-radius
+ y le ponemos un color de fondo*/
+ button{
+ padding: 10px;
+ border-radius: 0.5em;
+ background-color: rgb(235, 139, 139);
+ }
+ /*Hacemos que el botón tenga un efecto al pasar el ratón por encima (hover)
+ en este caso, una transición con tiempo de 1 segundo*/
+ button:hover{
+ background-color: red;
+ color: white;
+ transition: 1s;
+ }
+ /*Al título, le damos más importancia mediante hacerlo más grande*/
+ h2{
+ font-size: 2em;
+ }
+ /*Y al precio haciendo que su fuente pase a estar en negrita*/
+ .precio{
+ font-weight: bold;
+ }
+ /*Hacemos que el borde sea redondeado*/
+ border-radius: 2em;
+ /*Ponemos como color de fondo un degradado de blanco a un rojo palido*/
+ background: linear-gradient(to bottom right,white, rgb(221, 71, 71));
+}
+
+
+
