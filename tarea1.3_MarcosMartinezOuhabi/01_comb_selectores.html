@@ -19,6 +19,11 @@ span + b {
 p ~ div {
       	   border: 1px solid cadetblue;
  	}
+/* Para todo p, que venga posterior a un span que sea hijo directo de un div y para todo span que venga tras un div*/
+div > span + p, div + span{
+	background-color: aliceblue;
+	color:orange;
+}
  	</style>
     </head>
     <body>  
@@ -31,6 +36,8 @@ p ~ div {
 				dentro de un párrafo más interior</p>
         	    <span>Sólo es una frase <b>suelta</b>.</span>
     	   </div>
-	</div>		 
+
+		   <span>Etiqueta añadida</span><p>Palabra añadida</p>
+	</div> 
     </body>
 </html
