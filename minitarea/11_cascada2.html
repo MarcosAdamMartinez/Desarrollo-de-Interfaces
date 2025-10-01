@@ -10,7 +10,7 @@
     }
 
     /* Scoped: solo aplica dentro de .articulo */
-    @scope (.articulo) {
+    @scope (section) {
       h2 {
         color: crimson;
       }
@@ -23,10 +23,10 @@
 <body>
   <h2>Este h2 es azul (regla global)</h2>
 
-  <div class="articulo">
+  <section class="articulo">
     <h2>Este h2 es rojo (scope)</h2>
     <p>Párrafo en cursiva solo dentro del scope.</p>
-  </div>
+  </section>
 
   <h2>Este h2 vuelve a ser azul</h2>
 </body>
