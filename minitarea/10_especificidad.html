@@ -13,22 +13,22 @@
 
     /* Selector de clase */
     .container {
-      background: lightblue;
+      background: lightblue !important; /*Todo elemento que tenga la clase container tendrá este color de fondo*/
     }
 
-    /* Selector de id */
+    /* Selector de id (Prioritario sobre las clases)*/
     #element {
       background: lightgreen;
     }
 
     /* Selector combinado */
-    section .container p {
+    section .container {
       background: yellow;
     }
 
     /* Con !important */
     .forzado {
-      background: orange !important;
+      background: orange /*!important*/;
     }
   </style>
 </head>
