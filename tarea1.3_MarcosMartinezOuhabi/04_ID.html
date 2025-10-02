@@ -14,6 +14,14 @@
       background-color: lightyellow; font-style: italic; padding: 10px;
       border: 1px solid orange; border-radius: 8px;
     }
+    /* Aplico un estilo al elemento perteneciente a "claseNueva" y con el id "parrafoNuevo" */
+    #parrafoNuevo.claseNueva{
+      background-color: blue;
+      font-style: italic; 
+      padding: 10px;
+      border: 1px solid darkblue; 
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -25,6 +33,9 @@
 
   <!-- Otro párrafo normal sin ID -->
   <p>Este párrafo no tiene ID, así que no recibe el estilo especial.</p>
+
+  <!-- Añado un parrafo nuevo -->
+  <p id="parrafoNuevo" class="claseNueva">Parrafo añadido</p>
 </body>
 </html>
 

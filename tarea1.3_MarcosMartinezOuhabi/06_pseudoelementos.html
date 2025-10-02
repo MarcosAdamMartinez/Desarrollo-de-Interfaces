@@ -25,6 +25,11 @@
         		color: red;
         		background: yellow;
     	}
+		/* Aplicamos a la primera letra de todos los elementos de la clase "parrafoNuevo" un color y tamaño nuevos */
+		.parrafoNuevo::first-letter{
+			color: greenyellow;
+			font-size: 2.5em;
+		}
 	</style>
 </head>
 <body>
@@ -34,5 +39,7 @@
     	<li>Segundo Elemento</li>
     	<li>Tercer Elemento</li>
    </ul>
+   <!-- Parrafo añadido -->
+   <p class="parrafoNuevo">Parrafo añadido</p>
 </body>
 </html>

@@ -30,6 +30,10 @@
     	input:checked {
         	width: 20px; height: 20px;
     	}
+		/* Añado un selector que llama a la pseudoclase hover y lo transforma en azul */
+		button:hover {
+        	background-color: blue;
+    	}
 	</style>
 	<script>
     	function habilitarDeshabilitar(){
@@ -53,7 +57,9 @@
     	<a href="/html/">HTML</a> |
     	<a href="/css/">CSS</a> |
     	<a href="/js/">JavaScript</a> |
-    	<a href="/python/">Python</a>
+    	<a href="/python/">Python</a> |
+		<!-- Añado un nuevo boton llamado "SQL" -->
+		<a href="/sql/">SQL</a>
 	</nav>
 	<button onclick="habilitarDeshabilitar()">Habilitar</button>
 </body>

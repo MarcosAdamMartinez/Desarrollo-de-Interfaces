@@ -23,6 +23,13 @@
       border-style: dashed;
       border-color: aqua;
     }
+    /* Aplico este estilo a todos los elementos que sean hermanos directos de un span cuya clase sea 'especial"
+       y que posean ambas clases, "resaltado" y "green" */
+     span.especial + .resaltado.green {
+      padding: 5px;
+      font-weight: bold;
+      color: green;
+    }
   </style>
 </head>
 <body>
@@ -31,6 +38,8 @@
     <p class="resaltado">Resaltado dentro de contenedor</p>
   </div>
   <p class="resaltado">Este párrafo contiene resaltado </p> <span class="especial"> Y este texto con clase especial</span>
+  <p class="resaltado green">Parrafo añadido</p>
+  <!-- Añado un p nuevo -->
 </body>
 </html>
 
