@@ -152,10 +152,6 @@ img:hover{transform: translateY(-8px);transform: scale(102%);}
         min-width: 1000px;
     }
 
-    .aside{
-        max-height: 200px;
-    }
-
     .tarjeta1{
         grid-row: 1/2;
         grid-column: 1/2;
