@@ -51,6 +51,7 @@
   height: 200px;
   border-radius: 100px;
   box-shadow: 12px 15px 6px 3px rgba(0,0,0,0.4);
+  transition-delay: 0ms;
 }
 .barras {
   flex-flow: column nowrap;

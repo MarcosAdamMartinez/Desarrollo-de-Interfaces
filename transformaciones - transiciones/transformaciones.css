@@ -51,7 +51,7 @@
 }
 .c6:hover {
   /* Al posicionar el ratón sobre este elemento rotará 20 grados en sentido horario se transladará 250px hacia la derecha y 100px hacia abajo, y ademas se escalara su tamaño x 3 */
-  transform: rotate(20deg) translate(250px, 100px) scale(2);
+  transform: rotate(20deg) translate(250px, 100px) scale(200000000);
 }
 .c7:hover {
   perspective: 250px;
