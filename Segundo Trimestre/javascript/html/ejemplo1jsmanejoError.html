@@ -19,16 +19,24 @@
             console.log("Dentro del IF");
             console.log("Marca: ",marcaCoche);
             console.log("Modelo: ",modeloCoche);
-            console.log("Version: ",verionCoche);
             
         }
 
         console.log("Fuera del IF");
         console.log("Marca: ",marcaCoche);
         console.log("Modelo: ",modeloCoche);
-        console.log("Version: ",verionCoche);
-        console.log("El "+marcaCoche+modeloCoche+" tiene varias versiones, pero no puedo ver cual seleccionaste "+verionCoche);
+        
+        /*Manejamos el error para quje el ejemplo no falle utilizando la estructura TRY - CATCH*/
 
+        try {
+            console.log("Version: ",verionCoche);
+            console.log("El "+marcaCoche+modeloCoche+" tiene varias versiones, pero no puedo ver cual seleccionaste "+verionCoche);
+        } catch (error){
+            console.log("Version del coche no definida. "+
+                "No se puede acceder a la variable VersionCoche"+
+                "porque existe solo dentro del IF"
+            )
+        }
 
     </script>
 </head>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        /* Actividad 1: Incluye variables declaradas que almacenen la siguiente información (Nombre, edad, te gusta programar, comida fav, altura en m)
+           Y muestralas en la consola */
+
+        const nombre = "Aitor Coscollano";
+        var edad = 24, leGustaProgramar = false, comidaFav = "Ramen", altura = 1.88;
+        let ciudad = "Madrid";
+
+        if (leGustaProgramar == true) {
+            console.log("Nombre: "+nombre+"\nEdad: "+edad+"\nLe gusta programar?: Si \nComida favorita: "+comidaFav+"\naltura: "+altura+"\nCiudad: "+ciudad);
+        } else {
+            console.log("Nombre: "+nombre+"\nEdad: "+edad+"\nLe gusta programar?: No \nComida favorita: "+comidaFav+"\naltura: "+altura+"\nCiudad: "+ciudad);
+        }
+
+        // Declaramos const una variable de tipo objeto
+        const person = { nombre: "Pedro", edad: 53 };
+        console.log(person);
+        person.edad = 55;
+        console.log("Edad: "+person.edad);
+        // Puedes cambiar las propiedades de un objeto declarado con const, como la edad en este ejemplo, pero no puedes eliminar las propiedades
+        // person = {};
+        // console.log(person);
+
+
+        // Declaramos con const un array del tipo array
+        const array = ["Melocotón", "Manzana", "Pera", "Platano"];
+
+        console.log(array);
+        console.log(array[0]);
+        array.push("Uva");
+        console.log(array);
+            
+
+    </script>
+</head>
+<body>
+    <h2>Demo Javascript en &lt; Head &gt;</h2>
+    <p>Abre la consola para ver el resultado</p>
+</body>
+</html>
