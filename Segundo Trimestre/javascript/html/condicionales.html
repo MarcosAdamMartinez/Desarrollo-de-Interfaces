@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        // Utilizaremos una sentencia "if" para especificar un bloque de código// que se debe ejecutar cuándo la condición sea verdadera
+        if(true){
+        console.log("La condición del \"if\" fue verdadera.");}
+
+        // Use la instrucción "else" para especificar un bloque de código que se // ejecutarási la condición es falsa.
+        if(false) {
+            console.log("Este mensaje no se mostrará nunca al ser la condición falsa.");}
+        else{
+            console.log("Se muestra este mensaje porque la condición del \"if\" fue falsa y este mensaje está dentro del \"else\"");
+        }
+
+        // Use la instrucción "else if" para especificar una nueva condición si la primeracondición es falsa.
+        let condicion1 = false, condicion2 = false;
+        if(condicion1) {
+            console.log("Este mensaje no se mostrará nunca al ser la 1ª condición falsa.");}
+        else if(condicion2) {
+            console.log("Este mensaje no se mostrará nunca al ser la 2ª condición falsa.");}
+        else{
+            console.log("Se muestra este mensaje al estar en el último \"else\" que llegó por ser las condiciones previas falsas.");}
+
+
+        // Declaramos edad1 y edad2:
+        var edad1 = 12;
+        var edad2 = 82;
+        // Comprobamos si edad1 es mayor, menor o igual:
+        if (edad1 > edad2) {
+            console.log("edad1 es mayor que edad2");
+        } else if (edad1 < edad2) {
+            console.log("edad1 es menor que edad2");
+        } else {
+            console.log("edad1 es igual que edad2");
+        }
+
+    </script>
+</head>
+<body>
+    <h2>Demo Javascript en &lt; Head &gt;</h2>
+    <p>Abre la consola para ver el resultado</p>
+</body>
+</html>

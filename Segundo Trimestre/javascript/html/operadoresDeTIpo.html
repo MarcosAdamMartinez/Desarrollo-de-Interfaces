@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        // El operador "typeof" devolverá el tipo de dato del valor que contiene la variable
+        let variable = "Hola";
+        console.log("El operador 'typeof' devolverá el tipo de dato del valor que contiene la variable");
+        console.log("Por ejemplo el valor de la variable llamada 'variable' es :"+variable);
+        console.log("Y al llamar a 'typeof(variable)' me indica que es del tipo: "+typeof(variable));
+        // El operador "instanceof" devolverá verdadero si un objeto es una instancia de untipo de objeto
+        console.log("El operador 'instanceof' devolverá verdadero si un objeto es una instanciade un tipo de objeto");
+        let fecha = new Date();
+        console.log('Por ejemplo al llamar a (fecha instanceof Date) devolverá: '+(fecha instanceof Date));
+
+        // No es posible que una variable te de tipo null
+
+        var Pokemon = {nombre:new String("Raichu"),nivel:new Number(12),tipos:new String("Electrico/null")}
+        console.log('Por ejemplo al llamar a (Pokemon.nombre instanceof Number) devolverá: '+(Pokemon.nombre instanceof Number));
+
+        let x = 5;
+        console.log('Por ejemplo al llamar a (x instanceof Number) devolverá: '+(x instanceof Number));
+
+        let x2 = new Number(5);
+        console.log('Por ejemplo al llamar a (x2 instanceof Number) devolverá: '+(x2 instanceof Number));
+        console.log("El valor de x y x2 respectivamente es: "+x+" y "+x2);
+
+        let y = "Hola";
+        console.log('Por ejemplo al llamar a (y instanceof Number) devolverá: '+(y instanceof String));
+
+        let y2 = new String("Hola");
+        console.log('Por ejemplo al llamar a (y2 instanceof Number) devolverá: '+(y2 instanceof Number));
+        console.log("El valor de y e y2 respectivamente es: "+y+" y "+y2);
+        
+
+    </script>
+</head>
+<body>
+    <h2>Demo Javascript en &lt; Head &gt;</h2>
+    <p>Abre la consola para ver el resultado</p>
+</body>
+</html>

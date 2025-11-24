@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        // El + también se puede usar para agregar cadenas (concatenar)
+        let variable = "Hola";
+        let variable2 = " ¿qué tal?";
+        console.log(variable + variable2);
+        // Y si uno de los dos operandos del + es una cadena, seguirá concatenando la cadena alvalor del otro operando
+        let numero = 2;
+        console.log("Sumando " + numero + " y " + numero + ". ¿Cuánto da?" );
+        // Un String se puede crear como primitivas, a partir de literales de cadena o comoobjetos, ó usando el constructor String ():
+        let texto = new String ("Un objeto String");
+        // Esto permite que cualquier String (literales u objetos) puedan utilizar los métodosy propiedades de esta clase.
+        console.log(variable + " ¿contiene la letra \"a\"? " +(variable.includes('a')));
+        console.log("¿Cuántos caracteres tiene el texto \""+ variable2 + "\"? "+(variable2.length));
+
+    </script>
+</head>
+<body>
+    <h2>Demo Javascript en &lt; Head &gt;</h2>
+    <p>Abre la consola para ver el resultado</p>
+</body>
+</html>
