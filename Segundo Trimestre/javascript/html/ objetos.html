@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        // Un objeto en JavaScript es una lista de pares "clave:valor" separadas por , dentro de {}
+        // Se pueden crear de diferentes maneras
+        const persona = {
+
+            nombre:"Juan",
+            apellido:"Nadie",
+            edad:25
+
+        };
+
+
+        // También podríamos crearlo así
+        const persona2 = {}
+
+        // Y añado sus propiedades después:
+        persona2.nombre="Fermín";
+        persona2.apellido="Trujillo";
+        persona2.edad=33;
+        persona.colorDeOjos="Verdes";
+
+
+        // O creando una instancia de "Object"
+        const persona3 = new Object();
+
+        // Y luego rellenando sus propiedades:
+        persona3.nombre="Antonio";
+        persona3.primerApellido="Recío";
+        persona3.segundoApellido="Matamoros";
+
+        const persona4 = {
+
+            nombre: "Ruben",
+            apellido: "Escarpa",
+            saludar: function saludar() {
+                console.log("Hola soy "+this.nombre,this.apellido)
+            }
+        }
+
+        persona4.saludar();
+        console.log(persona4);
+
+
+        let cuenta = {
+
+            titular: "Ruben",
+            saldo: 100,
+            ingresar: function ingresar(cantidad) {
+                this.saldo += cantidad;
+            },
+            mostrar: function mostrarSaldo(){
+                return this.saldo;
+            }
+
+        }
+
+        console.log("Saldo actual: "+cuenta.mostrar())
+        cuenta.ingresar(-50);
+        console.log("Saldo actual: "+cuenta.mostrar())
+
+    </script>
+</head>
+<body>
+    <h2>Demo Javascript en &lt; Head &gt;</h2>
+    <p>Abre la consola para ver el resultado</p>
+</body>
+</html>
