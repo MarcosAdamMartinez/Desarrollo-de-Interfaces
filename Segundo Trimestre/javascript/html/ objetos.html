@@ -62,6 +62,21 @@
         cuenta.ingresar(-50);
         console.log("Saldo actual: "+cuenta.mostrar())
 
+        let alumno = {
+            nombre: "Carlos",
+            "Nota Final": 8.5
+        }
+
+        console.log(alumno.nombre);
+        console.log(alumno["Nota Final"]);
+        // Si en vez de usar la notacion de [] usamos la de punto, la consola nos devuelve un SyntaxError:
+        // console.log(alumno."Nota Final");
+
+        let clave = "nombre";
+        console.log("Acceso usando la variable clave: "+alumno[clave]);
+
+        
+
     </script>
 </head>
 <body>
