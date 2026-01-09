@@ -48,7 +48,9 @@ function mostrarOrdenado() {
         // Repito con el performance:
         console.group("Performance");
         console.log("Rendimiento actual: "+performance.now());
-        let inicio = performance.now(); for (let i = 0; i < 1_000_000; i++) { } let fin = performance.now(); 
+        let inicio = performance.now(); 
+        for (let i = 0; i < 1_000_000; i++) { } 
+        let fin = performance.now(); 
         console.log("Tiempo de ejecucion del bucle: "+(fin-inicio)+"ms");
         console.groupEnd();
 

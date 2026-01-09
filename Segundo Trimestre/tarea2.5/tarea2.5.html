@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tarea 2.5</title>
+    <meta charset="UTF-8">
+    <script>
+
+        // Ejercicio 1: Obtén el elemento <ul>
+        // Obtén todos los elementos con clase item
+        // Muestra en consola el texto de cada tarea (de la lista) usando un bucle
+
+        // let lista = document.getElementById("lista");
+        // let elementos = document.querySelectorAll("[class = 'item']");
+        // for (let i = 0; i < elementos.length; i++) {
+        //     console.log(elementos[i].textContent);
+        // }
+
+        // Ejercicio 2:
+        // let lista = document.getElementById("lista");
+        // let itemNuevo = document.createElement("li");
+        // itemNuevo.textContent = "tarea creada dinámicamente";
+        // itemNuevo.classList.add("item");
+        // lista.appendChild(itemNuevo);
+
+        // Ejercicio 3:
+        // let lista = document.getElementById("lista");
+        // if (lista.lastElementChild) {
+        //     lista.lastElementChild.remove();
+        // } else {
+        //     console.log("Lista de elementos vacia.");
+        // }
+
+        // let lista = document.getElementById("lista");
+        // document.getElementById("btn-agregar").addEventListener("click", () => {
+        //     let itemNuevo = document.createElement("li");
+        //     itemNuevo.textContent = "Nuevo Item";
+        //     itemNuevo.classList.add("item");
+        //     lista.appendChild(itemNuevo);
+        // });
+
+        // let lista = document.getElementById("lista");
+        // document.getElementById("btn-borrar").addEventListener("click", () => {
+        //     if (lista.lastElementChild) {
+        //     lista.lastElementChild.remove();
+        // } else {
+        //     console.log("Lista de elementos vacia.");
+        // }
+        // });
+
+
+    </script>
+</head>
+    <h2 id="titulo">Panel de Tareas</h2>
+    <ul id="lista">
+        <li class="item">Tarea 1</li>
+        <li class="item">Tarea 2</li>
+    </ul>
+    <button id="btn-agregar">Agregar Tarea</button>
+    <button id="btn-borrar">Borrar última Tarea</button>
+
+</html>
